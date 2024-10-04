@@ -44,14 +44,14 @@ sh -c "$(wget https://raw.githubusercontent.com/doctormo/GimpPs/master/tools/ins
 #### via powershell:
 
 	# exit gimp first
-	cd $Env:UserProfile
-	mv .gimp-2.10 .gimp-2.10.backup
-	git clone --depth=1 https://github.com/doctormo/GimpPs.git .gimp-2.10
+	cd ($Env:Appdata + '\GIMP')
+	mv 2.10 backup.2.10
+	git clone --depth=1 https://github.com/doctormo/GimpPs.git 2.10
 
 #### via cmd:
 
 	# exit gimp first
-	cd %USERPROFILE%
-	ren .gimp-2.10 .gimp-2.10.backup
-	git clone --depth=1 https://github.com/doctormo/GimpPs.git .gimp-2.10
+	cd %APPDATA%/GIMP
+	ren 2.10 backup.2.10
+	git clone --depth=1 https://github.com/doctormo/GimpPs.git 2.10
 People generally get biased in the discussion of GIMP Vs Photoshop but they don't know how powerful GIMP really is. You can do all the effects of you use GIMP Wisely.
